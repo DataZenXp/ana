@@ -2109,3 +2109,201 @@ nav ul li a.active {
 .map-overlay-new:hover {
     background: #f8f9fa;
 }
+
+/* ========================================
+   CROSS-DEVICE HARDENING LAYER
+   Additive safety rules so the layout holds
+   from ~320px phones to large 4K displays.
+   Does not override existing breakpoints.
+   ======================================== */
+
+/* 1. Never let media or embeds force horizontal scroll */
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+/* Keep the map iframe (fixed pixel height) exempt from height:auto */
+.map-frame-wrap iframe {
+    height: 360px;
+}
+
+/* 2. Fluid hero typography — scales smoothly on every width
+   instead of jumping at breakpoints. clamp(min, fluid, max). */
+.slide-content h1 {
+    font-size: clamp(1.9rem, 6vw + 0.5rem, 5rem);
+}
+
+.slide-content p {
+    font-size: clamp(1rem, 1.2vw + 0.7rem, 1.35rem);
+}
+
+/* Subpage hero headings (about / services use inline 4rem) */
+.hero-slider > .container > h1 {
+    font-size: clamp(1.8rem, 5vw + 0.5rem, 4rem) !important;
+}
+
+.hero-slider > .container > p {
+    font-size: clamp(0.95rem, 1vw + 0.7rem, 1.2rem) !important;
+}
+
+/* Section headings scale fluidly too */
+.section-head h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.purpose-box p {
+    font-size: clamp(1.2rem, 4vw, 3rem);
+}
+
+/* 3. services.html cards have bare img/h3/p (no .service-body wrapper).
+   Give those direct children safe spacing on all screens. */
+.service-item > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-item > h3 {
+    padding: 22px 24px 0;
+}
+
+.service-item > p {
+    padding: 12px 24px 28px;
+    margin-bottom: 0;
+}
+
+/* 4. Touch-friendly targets on coarse-pointer (touch) devices.
+   Note: NOT applied to nav dropdown links — those get their own
+   compact mobile styling below to avoid oversized rows. */
+@media (hover: none) and (pointer: coarse) {
+    .footer-links li a,
+    .social-links a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* 5. Prevent long unbroken strings (emails, URLs) from overflowing */
+.footer-contact-item span,
+.contact-info-item strong,
+.ribbon-item strong {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* 6. Center the container and widen comfortably on very large screens */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1360px;
+    }
+}
+
+/* 7. Very small phones (<= 360px): tighten spacing, stack safely */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .hero-btns .btn-primary,
+    .hero-btns .btn-outline {
+        padding: 12px 20px;
+    }
+
+    .river-node .node-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .est-tag {
+        font-size: 0.7rem;
+        padding: 7px 14px;
+    }
+}
+
+/* 8. Landscape phones: don't lock hero to tall vh, avoid clipping */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-wrapper {
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+/* ========================================
+   9. MOBILE NAV MENU FIX (<= 991px)
+   The dropdown sits inside .hero-wrapper which has
+   overflow:hidden — that clipped the open menu. The
+   3D hero image is hidden on mobile, so it is safe to
+   let the wrapper overflow here. Also makes the open
+   menu a clean, compact panel.
+   ======================================== */
+@media (max-width: 991px) {
+    /* Stop the hero wrapper from clipping the open dropdown */
+    .hero-wrapper {
+        overflow: visible;
+    }
+
+    /* Keep nav row tidy on small screens */
+    nav,
+    .contact-nav {
+        padding: 12px 0;
+    }
+
+    .nav-flex,
+    .contact-nav-inner {
+        align-items: center;
+    }
+
+    .nav-logo {
+        max-height: 42px;
+        width: auto;
+    }
+
+    /* The dropdown panel itself */
+    nav .nav-links,
+    .contact-nav-inner .nav-links {
+        padding: 6px 0;
+        gap: 0 !important;
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Each menu item: compact, consistent, full-width tap area */
+    nav .nav-links li,
+    .contact-nav-inner .nav-links li {
+        width: 100%;
+    }
+
+    nav .nav-links li a,
+    .contact-nav-inner .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 13px 22px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.4;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    nav .nav-links li:last-child a,
+    .contact-nav-inner .nav-links li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Active item gets a subtle highlight instead of just color */
+    nav .nav-links li a.active,
+    .contact-nav-inner .nav-links li a.active {
+        background: rgba(26, 138, 67, 0.07);
+        border-left: 3px solid var(--primary-green);
+        padding-left: 19px !important;
+    }
+}
