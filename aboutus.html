@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ana Laboratories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Hero Wrapper (Compact for Subpages) -->
+    <div class="hero-wrapper" style="min-height: 40vh;">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container top-bar-flex">
+                <div><i class="fas fa-phone"></i> +91 022-28506040 / 28501235</div>
+                <div><i class="fas fa-envelope"></i> info@analaboratories.co.in</div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav style="top: 30px;">
+            <div class="container container-nav">
+                <div class="nav-flex">
+                    <a href="index.html" class="logo-link">
+                        <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Laboratories Logo" class="nav-logo" style="filter: brightness(0) invert(1);">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html" class="active">About Us</a></li>
+                        <li><a href="services.html">Service</a></li>
+                        <li><a href="equipment.html">Infrastructure</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-slider" style="flex:1; display:flex; align-items:center; padding: 100px 0 50px;">
+            <div class="container">
+                <h1 style="color:white; font-size:4rem; font-weight:800; margin-top:20px;">About Our Expertise</h1>
+                <p style="color:rgba(255,255,255,0.9); font-size:1.2rem;">Building trust through scientific precision since 1970.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Content -->
+    <section class="mission-section reveal active">
+        <div class="container">
+            <div class="infra-row" style="margin-bottom:80px;">
+                <div class="infra-text">
+                    <h2 style="color:var(--primary-green); margin-bottom:20px;">53+ Years of Excellence</h2>
+                    <p>Ana Laboratories Pvt. Ltd. was established in 1970 with a vision to provide specialized laboratory services of the highest quality. Over five decades, we have evolved into a trusted name in the field of analytical testing.</p>
+                    <p>Our commitment to "Making Universe Safe and Secure" drives every test we conduct and every report we generate. We are proud to be an ISO 17025 : 2017 & ISO 9001 : 2015 accredited laboratory.</p>
+                </div>
+                <div class="infra-img-box">
+                    <img src="https://analaboratories.co.in/images/about_us.jpg" alt="Lab Team">
+                </div>
+            </div>
+
+            <!-- Quality Policy -->
+            <div class="purpose-box reveal" style="background:var(--grey-light); margin-top:100px;">
+                <i class="fas fa-award quote-icon"></i>
+                <h2 style="font-size:1.5rem; margin-bottom:20px;">Quality Policy</h2>
+                <p style="font-size:1.5rem; font-weight:600; color:var(--text-dark); line-height:1.4;">"To provide accurate and timely analytical results through technical expertise and state-of-the-art infrastructure while complying with international standards."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Ana Labs</h4>
+                    <p style="font-size:0.9rem">Ana Laboratories Pvt Ltd has been serving customers since 1970 with technical expertise and sound infrastructure.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p style="font-size:0.9rem">
+                        Mumbai, Maharashtra<br>
+                        Tel: +91 022-28506040<br>
+                        Email: info@analaboratories.co.in
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>COPYRIGHT &copy; 2026 ANA LABORATORIES PVT LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
+</body>
+</html>
