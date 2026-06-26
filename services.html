@@ -14,32 +14,28 @@
 
     <!-- Header & Hero Wrapper -->
     <div class="hero-wrapper" style="min-height: 40vh;">
-        <div class="top-bar">
-            <div class="container top-bar-flex">
-                <div><i class="fas fa-phone"></i> +91 022-28506040</div>
-                <div><i class="fas fa-envelope"></i> info@analaboratories.co.in</div>
-            </div>
-        </div>
-        <nav style="top: 30px;">
+        <nav>
             <div class="container container-nav">
                 <div class="nav-flex">
                     <a href="index.html" class="logo-link">
-                        <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Laboratories Logo" class="nav-logo" style="filter: brightness(0) invert(1);">
+                        <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Laboratories Logo" class="nav-logo">
                     </a>
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="services.html" class="active">Service</a></li>
-                        <li><a href="equipment.html">Infrastructure</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
         </nav>
         <section class="hero-slider" style="flex:1; display:flex; align-items:center;">
             <div class="container">
-                <h1 style="color:white; font-size:4rem; font-weight:800;">Scope of Testing</h1>
-                <p style="color:rgba(255,255,255,0.9); font-size:1.2rem;">Comprehensive analytical solutions across multiple sectors.</p>
+                <h1 style="color:var(--text-dark); font-size:4rem; font-weight:800;">Scope of Testing</h1>
+                <p style="color:var(--text-dark); font-size:1.2rem;">ISO 9001:2008 certified analytical solutions across multiple sectors since 1969.</p>
             </div>
         </section>
     </div>
@@ -48,33 +44,165 @@
     <section class="services-section" style="padding: 100px 0; background: white;">
         <div class="container">
             <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
-                
-                <!-- Pharmaceutical -->
+                <!-- Pharmaceuticals & Cosmetics -->
                 <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
                     <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="Pharma">
-                    <h3 style="color:var(--primary-green)">Pharmaceuticals</h3>
-                    <p style="color:var(--grey-mid)">Testing of active gradients, raw materials, and finished formulations for quality and regulatory compliance.</p>
+                    <h3 style="color:var(--primary-green)">Pharmaceuticals & Cosmetics</h3>
+                    <p style="color:var(--grey-mid)">Testing of active ingredients, raw materials, and finished formulations for quality and regulatory compliance.</p>
                 </div>
 
-                <!-- Cosmetics -->
+                <!-- Formulations -->
                 <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
-                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Cosmetics">
-                    <h3 style="color:var(--primary-green)">Cosmetics</h3>
-                    <p style="color:var(--grey-mid)">Comprehensive safety and stability testing for cosmetic products and personal care ingredients.</p>
+                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Formulations">
+                    <h3 style="color:var(--primary-green)">Formulations</h3>
+                    <p style="color:var(--grey-mid)">Analysis of Tablets, Capsules, Liquids, Ointments & Injectables for quality assurance.</p>
                 </div>
 
-                <!-- Ayurveda -->
+                <!-- Ayurvedic Products -->
                 <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
                     <img src="https://analaboratories.co.in/images/11-medicale-242x160.jpg" alt="Ayurveda">
-                    <h3 style="color:var(--primary-green)">Ayurveda & Herbal</h3>
-                    <p style="color:var(--grey-mid)">Specialized analytical services for herbal formulations, extracts, and Unani products.</p>
+                    <h3 style="color:var(--primary-green)">Ayurvedic Products</h3>
+                    <p style="color:var(--grey-mid)">Specialized analytical services for ayurvedic formulations and herbal extracts.</p>
                 </div>
 
-                <!-- Food -->
+                <!-- Foods & Vegetables -->
                 <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
                     <img src="https://analaboratories.co.in/images/10-medicale-242x160.jpg" alt="Food">
-                    <h3 style="color:var(--primary-green)">Food & Agriculture</h3>
-                    <p style="color:var(--grey-mid)">Nutritional labeling, pesticide residues, and contaminant testing for export-quality products.</p>
+                    <h3 style="color:var(--primary-green)">Foods & Vegetables</h3>
+                    <p style="color:var(--grey-mid)">Nutritional labeling, pesticide residues, and contaminant testing for food safety.</p>
+                </div>
+
+                <!-- Water & Oils -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="Water">
+                    <h3 style="color:var(--primary-green)">Water (Drinking & Waste) & Oils</h3>
+                    <p style="color:var(--grey-mid)">Comprehensive water quality analysis and oil testing for industrial compliance.</p>
+                </div>
+
+                <!-- Agriculture -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/10-medicale-242x160.jpg" alt="Agriculture">
+                    <h3 style="color:var(--primary-green)">Agriculture</h3>
+                    <p style="color:var(--grey-mid)">Soil testing, fertilizer analysis and crop quality assessment for farming.</p>
+                </div>
+
+                <!-- Chemicals -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Chemicals">
+                    <h3 style="color:var(--primary-green)">Chemicals</h3>
+                    <p style="color:var(--grey-mid)">Analytical testing for industrial and specialty chemicals.</p>
+                </div>
+
+                <!-- Pesticides -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/11-medicale-242x160.jpg" alt="Pesticides">
+                    <h3 style="color:var(--primary-green)">Pesticides</h3>
+                    <p style="color:var(--grey-mid)">Residue testing and formulation analysis for pesticide products.</p>
+                </div>
+
+                <!-- Poultry Products -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/10-medicale-242x160.jpg" alt="Poultry">
+                    <h3 style="color:var(--primary-green)">Poultry Products</h3>
+                    <p style="color:var(--grey-mid)">Quality and safety testing for poultry products and feed.</p>
+                </div>
+
+                <!-- Soaps, Perfumes, etc -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Soaps">
+                    <h3 style="color:var(--primary-green)">Soaps, Perfumes & Detergents</h3>
+                    <p style="color:var(--grey-mid)">Testing of soaps, perfumes, detergents, flavors, essential oils & aromatic chemicals.</p>
+                </div>
+
+                <!-- Surgical Dressings -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="Surgical">
+                    <h3 style="color:var(--primary-green)">Surgical Dressings & Disinfectants</h3>
+                    <p style="color:var(--grey-mid)">Analysis of cotton, gauze, surgical dressings and disinfectant products.</p>
+                </div>
+
+                <!-- Antibiotics & Vitamins -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/11-medicale-242x160.jpg" alt="Antibiotics">
+                    <h3 style="color:var(--primary-green)">Antibiotics & Vitamins</h3>
+                    <p style="color:var(--grey-mid)">Potency and purity testing for antibiotic and vitamin products.</p>
+                </div>
+
+                <!-- Unani Drugs -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/10-medicale-242x160.jpg" alt="Unani">
+                    <h3 style="color:var(--primary-green)">Unani Drugs</h3>
+                    <p style="color:var(--grey-mid)">Specialized testing for Unani medicinal products and formulations.</p>
+                </div>
+
+                <!-- Veterinary Drugs -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="Veterinary">
+                    <h3 style="color:var(--primary-green)">Veterinary Drugs</h3>
+                    <p style="color:var(--grey-mid)">Quality control testing for veterinary pharmaceuticals.</p>
+                </div>
+
+                <!-- Herbal Products -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/11-medicale-242x160.jpg" alt="Herbal">
+                    <h3 style="color:var(--primary-green)">Herbal Products</h3>
+                    <p style="color:var(--grey-mid)">Analysis of herbal extracts, supplements and natural products.</p>
+                </div>
+
+                <!-- Homeopathic Products -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Homeopathic">
+                    <h3 style="color:var(--primary-green)">Homeopathic Products</h3>
+                    <p style="color:var(--grey-mid)">Quality and purity testing for homeopathic medicines.</p>
+                </div>
+
+                <!-- Environmental Analysis -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Environment">
+                    <h3 style="color:var(--primary-green)">Environmental Analysis</h3>
+                    <p style="color:var(--grey-mid)">Monitoring and analysis of air, water, and soil quality for environmental safety.</p>
+                </div>
+
+                <!-- Geo-chemistry -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="Geo-chemistry">
+                    <h3 style="color:var(--primary-green)">Geo-chemistry</h3>
+                    <p style="color:var(--grey-mid)">Geological sample analysis for mineral and chemical composition.</p>
+                </div>
+
+                <!-- Metallurgy -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/10-medicale-242x160.jpg" alt="Metallurgy">
+                    <h3 style="color:var(--primary-green)">Metallurgy</h3>
+                    <p style="color:var(--grey-mid)">Metal and alloy testing for composition and quality compliance.</p>
+                </div>
+
+                <!-- Petrochemicals -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="Petrochemicals">
+                    <h3 style="color:var(--primary-green)">Petrochemical Products</h3>
+                    <p style="color:var(--grey-mid)">Specialized testing for industrial oils, lubricants, and refined petroleum products.</p>
+                </div>
+
+                <!-- Stability Studies -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/11-medicale-242x160.jpg" alt="Stability">
+                    <h3 style="color:var(--primary-green)">Stability Studies</h3>
+                    <p style="color:var(--grey-mid)">Long-term and accelerated stability studies for pharmaceutical products.</p>
+                </div>
+
+                <!-- Impurity Profile -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/12-medicale-242x160.jpg" alt="Impurity">
+                    <h3 style="color:var(--primary-green)">Impurity Profile Screening</h3>
+                    <p style="color:var(--grey-mid)">Detailed impurity profiling and identification for drug substances.</p>
+                </div>
+
+                <!-- DMF File -->
+                <div class="service-item reveal" style="background:var(--light-green); border-color:var(--primary-green); color:var(--text-dark);">
+                    <img src="https://analaboratories.co.in/images/13-medicale-242x160.jpg" alt="DMF">
+                    <h3 style="color:var(--primary-green)">DMF File</h3>
+                    <p style="color:var(--grey-mid)">Drug Master File preparation and analytical support for regulatory submissions.</p>
                 </div>
 
             </div>
@@ -91,29 +219,65 @@
     </section>
 
     <!-- Footer same as index -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>About Ana Labs</h4>
-                    <p style="font-size:0.9rem">Ana Laboratories Pvt Ltd has been serving customers since 1970.</p>
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Labs" class="footer-logo">
+                    <p>Established in 1969, Ana Laboratories is an ISO 9001:2008 certified service provider engaged in analysis of various products across environments, food, agriculture, pharmaceuticals, cosmetics, petrochemicals and more.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <p style="font-size:0.9rem">info@analaboratories.co.in</p>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Petrochemicals</a></li>
+                        <li><a href="services.html">Food & Agriculture</a></li>
+                        <li><a href="services.html">Environment</a></li>
+                        <li><a href="services.html">Clinical Research</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>15, 16, 17 M. K. Bros. Industrial Estate, Jari-Mari, Kurla Andheri Road, Mumbai, Maharashtra 400072</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 022-28506040</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>analabloratries@gmail.com</span>
+                    </div>
                 </div>
             </div>
-            <div class="bottom-footer">
-                <p>COPYRIGHT &copy; 2026 ANA LABORATORIES PVT LTD. ALL RIGHTS RESERVED</p>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-flex">
+                    <p>&copy; 2026 ANA LABORATORIES PVT LTD. All Rights Reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                        <a href="disclaimer.html">Disclaimer</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -132,6 +296,22 @@
         }
         window.addEventListener("scroll", reveal);
         reveal();
+
+        // Hamburger Menu Toggle
+        var hamburger = document.querySelector('.hamburger');
+        var navLinks = document.querySelector('.nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('open');
+                });
+            });
+        }
     </script>
 </body>
 </html>

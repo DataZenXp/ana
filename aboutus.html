@@ -14,36 +14,30 @@
 
     <!-- Header & Hero Wrapper (Compact for Subpages) -->
     <div class="hero-wrapper" style="min-height: 40vh;">
-        <!-- Top Bar -->
-        <div class="top-bar">
-            <div class="container top-bar-flex">
-                <div><i class="fas fa-phone"></i> +91 022-28506040 / 28501235</div>
-                <div><i class="fas fa-envelope"></i> info@analaboratories.co.in</div>
-            </div>
-        </div>
-
         <!-- Navigation -->
-        <nav style="top: 30px;">
+        <nav>
             <div class="container container-nav">
                 <div class="nav-flex">
                     <a href="index.html" class="logo-link">
-                        <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Laboratories Logo" class="nav-logo" style="filter: brightness(0) invert(1);">
+                        <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Laboratories Logo" class="nav-logo">
                     </a>
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html" class="active">About Us</a></li>
                         <li><a href="services.html">Service</a></li>
-                        <li><a href="equipment.html">Infrastructure</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
         </nav>
 
-        <section class="hero-slider" style="flex:1; display:flex; align-items:center; padding: 100px 0 50px;">
+        <section class="hero-slider" style="flex:1; display:flex; align-items:center;">
             <div class="container">
-                <h1 style="color:white; font-size:4rem; font-weight:800; margin-top:20px;">About Our Expertise</h1>
-                <p style="color:rgba(255,255,255,0.9); font-size:1.2rem;">Building trust through scientific precision since 1970.</p>
+                <h1 style="color:var(--text-dark); font-size:4rem; font-weight:800;">About Our Expertise</h1>
+                <p style="color:var(--text-dark); font-size:1.2rem;">Building trust through scientific precision since 1969.</p>
             </div>
         </section>
     </div>
@@ -53,12 +47,22 @@
         <div class="container">
             <div class="infra-row" style="margin-bottom:80px;">
                 <div class="infra-text">
-                    <h2 style="color:var(--primary-green); margin-bottom:20px;">53+ Years of Excellence</h2>
-                    <p>Ana Laboratories Pvt. Ltd. was established in 1970 with a vision to provide specialized laboratory services of the highest quality. Over five decades, we have evolved into a trusted name in the field of analytical testing.</p>
-                    <p>Our commitment to "Making Universe Safe and Secure" drives every test we conduct and every report we generate. We are proud to be an ISO 17025 : 2017 & ISO 9001 : 2015 accredited laboratory.</p>
+                    <h2 style="color:var(--primary-green); margin-bottom:20px;">55+ Years of Excellence</h2>
+                    <p>Established in the year 1969, Ana Laboratories is ISO 9001:2008 certified service provider engaged in offering analysis of various products in the field of environments, food products, agriculture, geo-chemistry, chemicals, metallurgy, pesticides, oils, pharmaceuticals & cosmetics and herbs, ayurvedic drugs, petrochemicals and oils, etc.</p>
+                    <p>We are supported by our technical expertise and sound infrastructure. We offer analysis and testing solutions on a wide range of products and materials since last four decades. Our expert and specialized services have helped a large number of our customers in optimizing their business operations.</p>
+                    <p>These services are delivered by our team of highly trained professionals as per (I.P, B.P, E.P, Ayurvedic Pharmacopeia, U.S.P, CIPAC, IS specifications etc.) or as per the customers specifications.</p>
                 </div>
-                <div class="infra-img-box">
-                    <img src="https://analaboratories.co.in/images/about_us.jpg" alt="Lab Team">
+            </div>
+
+            <!-- Our Infra Section -->
+            <div class="our-infra-section reveal" style="margin-top: 60px; text-align: center;">
+                <h2 style="font-size:2rem; color:var(--primary-green); margin-bottom: 30px;">Our Infra</h2>
+                <div style="display: flex; gap: 15px; justify-content: center; align-items: center; flex-wrap: wrap;">
+                    <img src="assets/infra/Screenshot 2026-06-26 221612.avif" alt="Infra Image 1" style="width: 100%; max-width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <img src="assets/infra/Screenshot 2026-06-26 221620.avif" alt="Infra Image 2" style="width: 100%; max-width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <img src="assets/infra/Screenshot 2026-06-26 221644.avif" alt="Infra Image 3" style="width: 100%; max-width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <img src="assets/infra/Screenshot 2026-06-26 221700.avif" alt="Infra Image 4" style="width: 100%; max-width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <img src="assets/infra/Screenshot 2026-06-26 221711.avif" alt="Infra Image 5" style="width: 100%; max-width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
                 </div>
             </div>
 
@@ -72,33 +76,65 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>About Ana Labs</h4>
-                    <p style="font-size:0.9rem">Ana Laboratories Pvt Ltd has been serving customers since 1970 with technical expertise and sound infrastructure.</p>
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <img src="https://analaboratories.co.in/img/Analogo.png" alt="Ana Labs" class="footer-logo">
+                    <p>Established in 1969, Ana Laboratories is an ISO 9001:2008 certified service provider engaged in analysis of various products across environments, food, agriculture, pharmaceuticals, cosmetics, petrochemicals and more.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <p style="font-size:0.9rem">
-                        Mumbai, Maharashtra<br>
-                        Tel: +91 022-28506040<br>
-                        Email: info@analaboratories.co.in
-                    </p>
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Petrochemicals</a></li>
+                        <li><a href="services.html">Food & Agriculture</a></li>
+                        <li><a href="services.html">Environment</a></li>
+                        <li><a href="services.html">Clinical Research</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>15, 16, 17 M. K. Bros. Industrial Estate, Jari-Mari, Kurla Andheri Road, Mumbai, Maharashtra 400072</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 022-28506040</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>analabloratries@gmail.com</span>
+                    </div>
                 </div>
             </div>
-            <div class="bottom-footer">
-                <p>COPYRIGHT &copy; 2026 ANA LABORATORIES PVT LTD. ALL RIGHTS RESERVED</p>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-flex">
+                    <p>&copy; 2026 ANA LABORATORIES PVT LTD. All Rights Reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                        <a href="disclaimer.html">Disclaimer</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -117,6 +153,22 @@
         }
         window.addEventListener("scroll", reveal);
         reveal();
+
+        // Hamburger Menu Toggle
+        var hamburger = document.querySelector('.hamburger');
+        var navLinks = document.querySelector('.nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('open');
+                });
+            });
+        }
     </script>
 </body>
 </html>
